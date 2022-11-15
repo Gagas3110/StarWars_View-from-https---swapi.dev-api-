@@ -1,0 +1,168 @@
+import 'package:flutter/material.dart';
+
+class CharItem extends StatelessWidget {
+  final double deviceHeight;
+  final double deviceWidth;
+  final String name;
+  final String birthYear;
+  final String gender;
+  final String height;
+  final String mass;
+  final String image;
+  const CharItem({
+    Key? key,
+    required this.deviceHeight,
+    required this.deviceWidth,
+    required this.name,
+    required this.birthYear,
+    required this.gender,
+    required this.height,
+    required this.mass,
+    required this.image,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: deviceWidth * 0.06),
+      padding: EdgeInsets.only(
+          top: deviceHeight * 0.01,
+          left: deviceWidth * 0.03,
+          right: deviceWidth * 0.03),
+      height: deviceHeight * 0.55,
+      width: deviceWidth * 0.6,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.grey, width: 4),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.2),
+              spreadRadius: 3,
+              blurRadius: 5,
+              offset: Offset(0, 1),
+            )
+          ]),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+              height: deviceHeight * 0.3,
+              width: deviceWidth,
+              decoration: BoxDecoration(
+                  color: Colors.grey.shade100,
+                  border: Border.all(color: Colors.grey, width: 4),
+                  borderRadius: BorderRadius.circular(4),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 3,
+                      blurRadius: 5,
+                      offset: Offset(0, 1),
+                    )
+                  ]),
+              child: Image.asset(
+                image,
+                fit: BoxFit.fill,
+              )),
+          Divider(
+            height: deviceHeight * 0.03,
+            thickness: 3,
+          ),
+          Center(
+            child: Text(
+              'Detail :',
+              style: TextStyle(color: Colors.blue, fontStyle: FontStyle.italic),
+            ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            physics: BouncingScrollPhysics(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      'Name',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      width: deviceWidth * 0.1,
+                    ),
+                    Text(
+                      ': ' + name,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              Text(
+                'Birth Year',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                width: deviceWidth * 0.04,
+              ),
+              Text(
+                ': ' + birthYear,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Text(
+                'Gender',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                width: deviceWidth * 0.08,
+              ),
+              Text(
+                ': ' + gender,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Text(
+                'Height',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                width: deviceWidth * 0.09,
+              ),
+              Text(
+                ': ' + height,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Text(
+                'Mass',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                width: deviceWidth * 0.11,
+              ),
+              Text(
+                ': ' + mass,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}

@@ -1,0 +1,225 @@
+name: Star_Wars
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.17.0
+  http: ^0.13.3
+  shared_preferences: ^2.0.8
+  cryptography: ^2.0.2
+  cupertino_icons: ^1.0.3 
+  extended_nested_scroll_view: ^5.0.0
+  flutter_bloc: ^8.1.1 
+  get_it: ^7.2.0 
+  path_provider: ^2.0.5
+  sqflite: ^2.0.0+4
+  flutter_rounded_date_picker: ^3.0.2
+  google_fonts: ^3.0.1
+  dio: ^4.0.6
+  flutter_local_notifications: ^12.0.3
+  image_picker: ^0.8.4+2
+  flutter_image_compress: ^1.1.0
+  flutter_native_image: ^0.0.6+1 
+  flutter_staggered_animations: ^1.0.0
+  searchable_dropdown: ^1.1.3
+  flutter_typeahead: ^4.1.1
+  crypto: ^3.0.1 
+  shimmer: ^2.0.0 
+  fluttertoast: ^8.0.8
+  location: ^4.3.0
+  video_player: ^2.2.5
+  printing: ^5.6.6
+  url_launcher: ^6.0.20
+  heroicons: ^0.7.0
+  flutter_launcher_icons: ^0.10.0
+  rename: ^2.0.1
+ 
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "Assets/img/stw.png"   
+ 
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - Assets/img/Hands Phone.png
+    - Assets/img/jago-logo.png
+    - Assets/img/Rectangle 79.png
+    - Assets/img/Rectangle 80.png
+    - Assets/img/7544 1.png
+    - Assets/img/Layer_1.png
+    - Assets/img/icon_s.png
+    - Assets/img/allianz-logo-0 1.png
+    - Assets/img/download 1.png
+    - Assets/img/Prudential_plc_logo.png
+    - Assets/img/AIAL.png
+    - Assets/icon/portofolio.png
+    - Assets/icon/claim_grey.png
+    - Assets/icon/account_grey.png
+    - Assets/icon/account_orange.png
+    - Assets/img/30022-paquito.png
+    - Assets/icon/lastWish.png
+    - Assets/icon/rewards.png
+    - Assets/icon/history.png
+    - Assets/icon/myPolis.png
+    - Assets/img/com-soon.png
+    - Assets/img/JagoBankLogo.png
+    - Assets/img/starwars.png
+    - Assets/img/setarwars.png
+    - Assets/img/stw.png
+    - Assets/img/theClones.png
+    - Assets/img/sith.png
+    - Assets/img/emPireS.png
+    - Assets/img/menace.png
+    - Assets/img/newHope.png
+    - Assets/img/Jedi.png
+    - Assets/img/yoda.png
+    - Assets/img/jektono.png
+    - Assets/img/obi.png
+    - Assets/img/R5D4.png
+    - Assets/img/darthvader.png
+    - Assets/img/earth.png
+    - Assets/img/Yavin.png
+    - Assets/img/Alderaan.png
+    - Assets/img/tatoine.png
+    - Assets/img/marquez.png
+    - Assets/img/Sandcrawler.png
+    - Assets/img/Skyhopper.png
+    - Assets/img/Landspeeder.png
+    - Assets/img/Falcon.png
+    - Assets/img/Imperial.png
+    - Assets/img/yWing.png
+    - Assets/img/Executor.png
+    - Assets/img/RebelT.png
+    - Assets/img/Sdes.png
+    - Assets/img/ultraman.png
+    - Assets/img/human.png
+    - Assets/img/droid.png
+    - Assets/img/wookie.png
+    - Assets/img/rodian.png
+    - Assets/img/Hutt.png
+
+
+    - Assets/img/Neimodian.png
+    - Assets/img/Sullustans.png
+    - Assets/img/Ewok.png
+    - Assets/img/Calmari.png
+    - Assets/img/trandoshian.png
+
+    - Assets/img/Cerean.png
+    - Assets/img/Toong.png
+    - Assets/img/Xexto.png
+    - Assets/img/Vulptereen.png
+    - Assets/img/Aleena.png
+
+    - Assets/img/Twi'lek.png
+    - Assets/img/Dug.png
+    - Assets/img/Toydarian.png
+    - Assets/img/Gungan.png
+    - Assets/img/Nautolan.png
+
+    - Assets/img/Zabrak.png
+    - Assets/img/Tholothian.png
+    - Assets/img/iktotchi.png
+    - Assets/img/Quermian.png
+    - Assets/img/Kel Dor.png
+
+    - Assets/img/Chagrian.png
+    - Assets/img/Geonosian.png
+    - Assets/img/Mirialan.png
+    - Assets/img/Clawdite.png
+    - Assets/img/Besalisk.png
+
+    - Assets/img/Kaminoan.png
+    - Assets/img/Skakoan.png
+
+    - Assets/img/Muun.png
+    - Assets/img/Togruta.png
+    - Assets/img/Kaleesh.png
+    - Assets/img/Pau'an.png
+ 
+
+   
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: Assets/fonts/Lato-Regular.ttf
+        - asset: Assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: Anton
+      fonts:
+        - asset: Assets/fonts/Anton-Regular.ttf
+    - family:  MyFlutterApp
+      fonts:
+      - asset: Assets/fonts/MyFlutterApp.ttf
+
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
